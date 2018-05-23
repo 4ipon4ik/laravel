@@ -1,0 +1,43 @@
+@import 'variables';
+html{
+  min-height: $DocMinH;
+}
+body{
+  background-color: $BodyC;
+}
+li{
+  list-style-type: $LiStyle;
+}
+.main{
+  margin-top: $MainTopMrg;
+}
+.logo{
+  max-height: $LogoMaxH;
+}
+.navbar-inverse{
+  background-color: $NavBarC;
+  border: $NavBarBrSz;
+  & .navbar-nav > li > a {
+    color: $NavTxtC;
+    font-weight: bold;
+    &:hover {
+      color: $NavTxtCHov;
+    }
+  }
+}
+iframe{
+  width: $IfrW;
+}
+footer{
+  width: $FtrW;
+  text-align: $FtrTxtAlgn;
+  position: $FtrPos;
+  bottom: $FtrPosBottom;
+  background-color: $FtrC;
+}
+.table .comment{
+  background-color: rgba(136,144,217,0.25);
+  &>th{
+    width: 50%;
+  }
+}
